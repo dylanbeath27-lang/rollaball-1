@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class rotation : MonoBehaviour
-{ public float speed;
-    // Update is called once per frame
-    void Update()
+public class Rotator : MonoBehaviour
+{
+
+ // Update is called once per frame
+ void Update()
     {
-      transform.Rotate (new Vector3 (0, 45, 0) * Time.deltaTime*speed);  
+ // Rotate the object on X, Y, and Z axes by specified amounts, adjusted for frame rate.
+        transform.Rotate (new Vector3 (0, 34, 0) * Time.deltaTime);
     }
+ 
 }
